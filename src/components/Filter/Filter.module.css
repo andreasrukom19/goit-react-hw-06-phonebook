@@ -1,0 +1,17 @@
+.filter-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-label-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filter-input {
+  border: none;
+  font-size: 16px;
+  padding: 8px 8px;
+  border-radius: 5px;
+}

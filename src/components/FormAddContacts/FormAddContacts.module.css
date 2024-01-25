@@ -1,0 +1,42 @@
+.contact-form {
+  margin-bottom: 20px;
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-form-input {
+  border: none;
+  font-size: 16px;
+  padding: 8px 8px;
+  border-radius: 5px;
+}
+
+.contact-form-btn {
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(240, 189, 94);
+  color: #FFF;
+  font-size: 16px;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.contact-form-btn:hover {
+  background-color: rgb(171, 115, 9);
+}
