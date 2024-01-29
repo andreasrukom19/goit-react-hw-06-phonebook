@@ -1,6 +1,17 @@
+import { useDispatch, useSelector } from 'react-redux';
 import css from './Filter.module.css';
+import { setFilter } from '../../redux/reducer';
 
-export const Filter = ({ filter, handleChangeFilter }) => {
+export const Filter = () => {
+  const dispatch = useDispatch();
+  const filter = useSelector(store => store.contactsGroup.filter);
+
+  const handleChangeFilter = event => {
+    const value = event.target.value;
+    const action = setFilter(value);
+    dispatch(action);
+  };
+
   return (
     <div>
       <label className={css['filter-label']}>
